@@ -1,0 +1,332 @@
+<html>
+    <title>hompage</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../photoproject/jquery-3.6.0.js"></script>
+  
+  <script src="../photoproject/jquery-3.6.0.js"></script>
+
+<head>
+    <script> 
+        $(document).ready (function(){
+          $("slidehotelimg:gt(0)").hide();
+          setInterval(  function(){ $("slidehotelimg:first").fadeOut('1000').next().fadeIn('1000').end().appendTo("slidehotel")},2500);
+                  }   );
+       </script>
+
+<script>
+  $(document).ready(function(){
+      // Toggles paragraphs display
+      $(".readmore-btn").click(function(){
+          $("p").toggle();
+      });
+  });
+  </script>
+   
+ 
+    <style>
+        /* start framwoek */
+      .container{margin: auto;width: 1200px; }
+      
+      .text-center{text-align: center;}
+      .upper{text-transform:uppercase;}
+      .main-color{color:#f7600e;}
+      .main-background{background-color:#f7600e;}
+      /* end our framwork */
+      /* start header */
+      .header{ background:url('header.jpg'); 
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        color: #fff; height: 300px;}
+        .imgmenu{
+            position: relative;
+           display: inline-block;
+            }
+        .menul{
+            display: none;
+            position: absolute;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            background:transparent ;
+            color:#eee;
+            width:150px;
+            height:200px;
+           
+           
+                right:10px;
+            top: 40px;
+          
+        }
+
+        .imgmenu:hover .menul{
+            display: block;
+            }
+        
+        
+
+      .header .overlay{background: rgba(49, 55, 61,0.8);width: 100%;height: 100%;}
+      .header .navbar { overflow: hidden;padding: 20px 0; }
+      .header .navbar .menu {float: right;position: relative; }
+      .header .entro .h1{margin: 0px;font-size: 50px;font-weight: 800;}
+      .header .entro .p{margin: 5px 0 40px;line-height: 1.6;font-size: 20px;color: rgb(168, 167, 167);}
+      .header .buttons .button {background:transparent ;padding: 10px 0;width: 180px;font-size: 14px;margin: 0 6px;border: 1px solid #909090 ;border-radius: 10px;transition: all 0.5 ease-in-out; }
+      .header .buttons .button:hover {background-color:#f7600e ;border:1px solid #f7600e ;color:#fff ; }
+
+      /* end header */
+      /*mneu*/
+    ul {
+     list-style-type:none;
+     margin: 0;
+     padding: 0;
+    width: 110px;
+     background:transparent;border: 1px solid #909090 ;border-radius: 10px 10px;transition: all 0.5 ease-in-out;
+ 
+      }
+
+   .menul li a {
+   display: block;
+   color: #f7600e;
+   padding: 8px 16px;
+   text-decoration: none;
+}
+
+  .menul  li {text-align: center; list-style-type: none;}
+
+  .menul li:last-child {
+  border-bottom: none;
+   }
+
+   .menul  li a.active {
+  background-color: #f7600e;
+  color: white;
+  border-radius: 5px;
+}
+
+.menul li a:hover:not(.active) {
+  background-color: #f7600e;
+  color: white;
+   }
+      /*mneu*/
+ 
+     
+     
+      
+
+      /* start body */
+      .containerbody{margin: auto;width: 1300px;height: 2000px; }
+      .divtop{margin:auto;  width: 1300px;height: 600px;float: right;}
+      .divl{float: left;width: 230px;height: 600px;border-radius: 8px;}
+     
+      .divr{ float: left;width: 230px;height: 600px;border-radius: 8px;}
+     
+      
+    
+
+      
+      .box{ float:left; width: 360PX;margin: 20px;;border-radius: 15px; ;padding: 10PX;box-shadow: 0px 5px 5px rgb(0,0,0,0.15);}
+      .boximg{width: 320px;height: 300px;margin-bottom:10px ;border-radius: 8px;}
+      .box h3{margin-top: 8px;text-align: center;font-size: 25px ;}
+      .box h4 {margin-bottom: 10px;} 
+      .box p {font-size: 20px;line-height: 25px;height: 120px;overflow: hidden;display: none;}  
+      .box a {display: inline-block;color: #000;text-decoration: none;padding: 10px 15px ; margin-top: 15px; border-radius: 10px;} 
+      .box a:hover{box-shadow: 0px 5px 5px rgb(0,0,0,0.2);color:#f7600e ;} 
+     
+           
+      
+      /* end body */
+      </style>
+      <style>
+          /* start footer*/
+  
+
+body {
+  background: #f36d25;
+  background: -webkit-linear-gradient(to right, #f36d25, #f77781);
+  background: linear-gradient(to right, #f36d25, #f77781);
+  min-height: 100vh;
+}
+body .overlay{width: 100%;height: 100%;}
+
+#button-addon1 {
+  color: #f77781;
+}
+
+i {
+  color: #f77781;
+}
+
+.foter::placeholder {
+  font-size: 0.95rem;
+  color: #aaa;
+  font-style: italic;
+}
+ .foter { text-align: center; border: none;list-style-type: none;width: 100%;}
+
+.form-control.shadow-0:focus {
+  box-shadow: none;
+}
+
+.foter   li { display:inline;}
+.foter li a { color:black; margin:0 20px;font-style:inherit;font-size: 25px;list-style-type: none;text-decoration: none;}
+.foter a:hover{box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);color: #e4e2e2;} 
+
+      /*end footer*/
+   
+    </style>
+  </head>
+  
+  <body>
+   <!--start header-->
+    <div class="header">
+      <div class="overlay">
+        <div class="container">
+        <div class="navbar">
+            <span>BOOK<span class="main-color">. HOTELS </span> </span>
+           
+            <span class="menu">
+                <div style=" float:right;">
+              <div style="width: 30px;height: 100px; float: left;padding:12px;"class="main-color"  > </div>
+               
+               <div class="imgmenu" style="float: right;width: 50px;height: 50px; "> <img  src="../photoproject/icons8-menu-64.png "  style="width: 50px;height: 50px;padding: auto;"></img>
+                
+             
+                    <ul class="menul"  >
+                        <li><a class="active" href="#home">Home</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Tours</a></li>
+                        <li><a href="#">Reservation</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About US</a></li>
+                      </ul>
+                
+               
+              </div>
+               </div>
+               
+
+            </span>
+           
+             
+           
+        <br>
+        <div class="entro text-center">
+            <h1 class="h1" class="upper">BOOK<span class="main-color" >.HOTELS</span></h1>
+            <P class="p">
+                Welcome to book hotels<BR/>
+                Graduation project by students of Modern Academy
+            </P>
+        
+        <div class="buttons">
+            <button class="button">Sing in</button>
+            <button class="button">Sing up</button>
+        </div>
+        </div>
+         
+            </div>
+          </div>
+       </div>
+    </div>
+      
+    <!--end header-->
+  
+    <!--start body-->
+    <div class="containerbody" >
+      <div class="divtop">
+       <div class="divl"><img style="width: 100%;;height:100%;" src="left.jpg"  ></div>
+      
+      
+    
+        <div class="box" >
+           <h3><span class="main-color"><A href="#" > TOURS </A></span></h3>
+          <img style="width:355px;height: 320px;" class="boximg" src="tors.jpg">
+           <h4>Tourist places close to hotels</h4>
+           <p>There are very many tourist and recreational places near our hotels. You can enjoy the best times. Learn more about the places from here.
+             </p>
+             <a  class="readmore-btn">Read more</a>
+      </div>
+      <div class="box" >
+        <h3><A href="#" > HOTELS </A></h3>
+       <img class="boximg" style="width:355px;height: 320px;"  src="hotels.jpg">
+        <h4> hotels</h4>
+        <p>There are very many tourist and recreational places near our hotels. You can enjoy the best times. Learn more about the places from here.
+          </p>
+          <a  class="readmore-btn">Read more</a>
+   </div>
+
+   <div class="divr"><img style="width: 100%;height: 100%;" src="right.jpg" ></div>
+          
+       </div>
+       
+    </div>
+    <!--end body-->
+           <!-- FOOTER -->
+        
+         
+   <div style="width: 100%;height: 100px;"><br/>
+    <hr/>
+       
+
+    <div class="container">
+
+
+
+<body class="d-flex flex-column">
+
+ 
+      <div class="row py-5">
+        <div class="col-lg-12 mx-auto text-white text-center">
+          <h1 class="display-4"> <span>BOOK. HOTELS </span>  </h1>
+          <p class="lead mb-0">Welcome To Book Hotels<BR/>
+            Graduation project by students of Modern Academy</p>
+          
+        </div>
+      </div>
+   
+ 
+
+
+   
+   
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">© 2020-2021 Modern Students Graduation Project</p>
+      
+   
+ 
+  
+  
+    <hr style="border:solid 0.5px ;color:rgb(12, 12, 12)"/>
+    <ul class="foter" >
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Hotels</a></li>
+      <li><a href="#">Rooms </a></li>
+      <li><a href="#">Tours</a></li>
+      <li><a href="#">Reservation</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About US</a></li>
+    
+    
+    
+    </ul>
+    <hr style="border:solid 0.5px ;color:rgb(12, 12, 12)"/>
+  </div>
+  <br>
+  <br>
+    <p class="text-center">producted @2021 | Designed With by Students Mis modern academy Graduation Project </p>
+    <br>
+    <br>
+   
+  </div>
+  </div>
+<!-- End  footer -->
+
+      
+      
+ 
+   
+
+  </body>
+  
+  
+  </html>
